@@ -9,6 +9,7 @@ nav:
   - Início: index.md
   - Estatística:
       - Probabilidade: estatistica/probabilidade.md
+      - Distribuição normal: estatistica/distribuicao_normal.md
 
 theme:
   name: material
