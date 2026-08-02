@@ -1,0 +1,23 @@
+# Python
+.claude
+livro_stats.pdf
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# uv
+.python-version.local
+
+# Zensical
+site/
+.cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/

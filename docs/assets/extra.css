@@ -1,0 +1,148 @@
+/* Itegosma Academy — ajustes visuais sobre o tema Material */
+
+:root {
+  --ia-radius: 14px;
+}
+
+/* Tipografia dos títulos um pouco mais expressiva */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3em;
+}
+
+/* ---------- Hero da página inicial ---------- */
+.ia-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 2.5rem 2rem;
+  margin: 0 0 2rem 0;
+  border-radius: var(--ia-radius);
+  background: linear-gradient(135deg, var(--md-primary-fg-color) 0%, #3f51b5 55%, #7986cb 100%);
+  color: white;
+}
+
+.ia-hero h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.1rem;
+}
+
+.ia-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 46rem;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.ia-hero .ia-hero-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.ia-hero .ia-hero-tags span {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* ---------- Cards de navegação (grid) ---------- */
+.ia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.ia-card {
+  display: block;
+  padding: 1.25rem 1.4rem;
+  border-radius: var(--ia-radius);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  color: var(--md-default-fg-color) !important;
+}
+
+.ia-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  border-color: var(--md-primary-fg-color);
+}
+
+.ia-card .ia-card-icon {
+  font-size: 1.6rem;
+}
+
+.ia-card h3 {
+  margin: 0.4rem 0 0.3rem 0;
+  font-size: 1.05rem;
+  color: var(--md-primary-fg-color);
+}
+
+.ia-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* ---------- Status / progresso de estudos ---------- */
+.ia-status {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.ia-status--planejado {
+  background: #e0e0e0;
+  color: #424242;
+}
+
+.ia-status--andamento {
+  background: #fff3cd;
+  color: #8a6100;
+}
+
+.ia-status--concluido {
+  background: #d4edda;
+  color: #1e6b34;
+}
+
+[data-md-color-scheme="slate"] .ia-status--planejado {
+  background: #3a3f44;
+  color: #d0d0d0;
+}
+
+[data-md-color-scheme="slate"] .ia-status--andamento {
+  background: #4d3d12;
+  color: #ffdd8a;
+}
+
+[data-md-color-scheme="slate"] .ia-status--concluido {
+  background: #123a22;
+  color: #8ee6ab;
+}
+
+/* ---------- Rodapé de autoria por membro ---------- */
+.ia-autores {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 2rem;
+}
