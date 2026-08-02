@@ -1,6 +1,5 @@
 # Python
 .claude
-livro_stats.pdf
 __pycache__/
 *.pyc
 .venv/
@@ -16,6 +15,9 @@ site/
 
 # Notebooks
 .ipynb_checkpoints/
+
+# Materiais de estudo (livros licenciados, apostilas etc. — não commitar)
+*.pdf
 
 # Editor / OS
 .DS_Store
