@@ -108,4 +108,4 @@ print(f"{probabilidade_condicional(0.18, 0.40):.0%}")  # P(meia | tênis)
 ```
 
 !!! note "Próximos passos"
-    Ainda faltam: Lei dos Grandes Números, teorema de Bayes e as distribuições (binomial, normal etc.). Entram aqui assim que forem estudadas. O código completo e executado está em `notebooks/estatistica/probabilidade/anotacoes.ipynb`.
+    Ainda faltam: Lei dos Grandes Números, teorema de Bayes e outras distribuições (binomial, gama, exponencial). A [distribuição normal](distribuicao_normal.md) já tem página própria. O código completo e executado está em `notebooks/estatistica/probabilidade/anotacoes.ipynb`.

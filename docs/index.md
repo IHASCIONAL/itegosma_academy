@@ -21,14 +21,20 @@ Um caderno de estudos coletivo de **estatística e Python**, mantido por três a
 
 ## Como este site funciona
 
-Não é um curso pronto — é um repositório vivo. As seções vão surgindo conforme o grupo avança nos estudos, não antes. Por enquanto estamos focados em **probabilidade**; o resto (Python, outras frentes de estatística, projetos) entra aqui assim que virar estudo de verdade.
+Não é um curso pronto — é um repositório vivo. As seções vão surgindo conforme o grupo avança nos estudos, não antes. Por enquanto estamos focados em **probabilidade e distribuições**; o resto (Python, outras frentes de estatística, projetos) entra aqui assim que virar estudo de verdade.
 
 <div class="ia-grid">
 
 <a class="ia-card" href="estatistica/probabilidade/">
 <div class="ia-card-icon">🎲</div>
 <h3>Probabilidade</h3>
-<p>Probabilidade frequentista, exemplos calculados e a simulação da Lei dos Grandes Números.</p>
+<p>Probabilidade frequentista, regra aditiva, multiplicativa e probabilidade condicional.</p>
+</a>
+
+<a class="ia-card" href="estatistica/distribuicao_normal/">
+<div class="ia-card-icon">🔔</div>
+<h3>Distribuição normal</h3>
+<p>Propriedades, regra 68-95-99,7 e cálculo de probabilidades — via scipy e à mão, com tabela-Z.</p>
 </a>
 
 </div>
