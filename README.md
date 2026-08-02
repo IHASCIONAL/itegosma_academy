@@ -51,6 +51,30 @@ Todo push e pull request para `main` roda automaticamente em [`.github/workflows
 
 Se algum desses falhar, o PR fica sinalizado — é a nossa rede de proteção contra quebrar algo sem perceber.
 
+## Fluxo de trabalho (branch protection)
+
+A `main` é protegida: **ninguém** (nem admin) consegue dar `git push` direto nela, e todo merge exige os 3 checks do CI verdes. Ou seja, todo mundo passa pelo mesmo fluxo:
+
+```bash
+git checkout main
+git pull
+git checkout -b minha-branch-descritiva   # ex: estudo/distribuicao-normal
+
+# ... trabalhe, commite ...
+
+git push -u origin minha-branch-descritiva
+gh pr create   # ou pelo site do GitHub
+```
+
+Depois:
+
+1. Espere o CI rodar no PR (`gh pr checks --watch` ou aba "Checks" do GitHub).
+2. Com os 3 checks verdes, dê merge (`gh pr merge --merge` ou pelo botão no GitHub).
+3. Delete a branch (`--delete-branch` no `gh pr merge` já faz isso).
+4. Localmente: `git checkout main && git pull`.
+
+Se o CI falhar, rode `uv run task lint`, `uv run task format` e `uv run task test` localmente, corrija e dê push de novo na mesma branch — o PR atualiza sozinho.
+
 ## Estrutura
 
 ```
